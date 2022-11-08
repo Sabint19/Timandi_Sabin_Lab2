@@ -17,5 +17,7 @@ namespace Timandi_Sabin_Lab2.Data
         public DbSet<Timandi_Sabin_Lab2.Models.Book> Book { get; set; } = default!;
 
         public DbSet<Timandi_Sabin_Lab2.Models.Publisher> Publisher { get; set; }
+
+        public DbSet<Timandi_Sabin_Lab2.Models.BookCategory> BookCategory { get; set; }
     }
 }

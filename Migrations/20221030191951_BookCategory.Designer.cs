@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Timandi_Sabin_Lab2.Data;
 
@@ -11,9 +12,10 @@ using Timandi_Sabin_Lab2.Data;
 namespace Timandi_Sabin_Lab2.Migrations
 {
     [DbContext(typeof(Timandi_Sabin_Lab2Context))]
-    partial class Timandi_Sabin_Lab2ContextModelSnapshot : ModelSnapshot
+    [Migration("20221030191951_BookCategory")]
+    partial class BookCategory
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
